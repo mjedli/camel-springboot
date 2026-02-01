@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Entity
@@ -16,14 +17,14 @@ public class Order {
 
     private String orderNumber;
     private String customerName;
-    private LocalDateTime orderDate;
+    private Timestamp orderDate;
     private String status;
     private BigDecimal totalAmount;
     private String currency;
     private String deliveryAddress;
 
     @Column(columnDefinition = "timestamp default current_timestamp")
-    private LocalDateTime lastUpdated;
+    private Timestamp lastUpdated;
 
 
     public Long getId() {
@@ -50,11 +51,11 @@ public class Order {
         this.customerName = customerName;
     }
 
-    public LocalDateTime getOrderDate() {
+    public Timestamp getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(LocalDateTime orderDate) {
+    public void setOrderDate(Timestamp orderDate) {
         this.orderDate = orderDate;
     }
 
@@ -90,11 +91,11 @@ public class Order {
         this.deliveryAddress = deliveryAddress;
     }
 
-    public LocalDateTime getLastUpdated() {
+    public Timestamp getLastUpdated() {
         return lastUpdated;
     }
 
-    public void setLastUpdated(LocalDateTime lastUpdated) {
+    public void setLastUpdated(Timestamp lastUpdated) {
         this.lastUpdated = lastUpdated;
     }
 }

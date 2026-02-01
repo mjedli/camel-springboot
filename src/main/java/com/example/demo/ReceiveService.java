@@ -17,7 +17,7 @@ public class ReceiveService {
     private final OrderRepository orderRepository;
     public ReceiveService(OrderRepository orderRepository)
     { this.orderRepository = orderRepository; }
-    private void insert(Order insertdata) {
+    public void insert(Order insertdata) {
         orderRepository.save(insertdata);
     }
 }

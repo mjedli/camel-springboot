@@ -10,6 +10,16 @@ CREATE TABLE orders (
     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE orders_end (
+    id SERIAL PRIMARY KEY,
+    order_number VARCHAR(50) ,
+    customer_name VARCHAR(100) ,
+    order_date TIMESTAMP ,
+    status VARCHAR(20) ,
+    total_amount DECIMAL(10, 2) ,
+    currency VARCHAR(10) ,
+    delivery_address TEXT
+);
 
 INSERT INTO orders (order_number, customer_name, order_date, status, total_amount, currency, delivery_address)
 VALUES
