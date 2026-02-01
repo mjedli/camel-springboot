@@ -1,0 +1,4 @@
+order_number,customer_name,order_date,status,total_amount,currency,delivery_address
+ORD-1001,Alice Dupont,2026-01-30T10:15:00,NEW,249.99,EUR,"12 rue Lafayette, Paris"
+ORD-1002,Jean Martin,2026-01-30T11:45:00,NEW,89.50,EUR,"5 avenue Victor Hugo, Lyon"
+ORD-1003,Sophie Bernard,2026-01-29T16:20:00,SHIPPED,320.00,EUR,"8 rue de la République, Marseille"

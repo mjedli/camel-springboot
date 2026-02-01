@@ -15,4 +15,12 @@ public class ReceiveController {
         System.out.println("Reçu : " + body);
         return ResponseEntity.ok("Reçu");
     }
+
+    @PostMapping("/insert")
+    public ResponseEntity<String> insert(@RequestBody String body) {
+        System.out.println("Insert : " + body);
+        return ResponseEntity.ok("Reçu");
+    }
+
+
 }
